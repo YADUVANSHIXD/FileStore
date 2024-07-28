@@ -1,25 +1,25 @@
-# © Telegram : @KingVJ01 , GitHub : @VJBots
+# © Telegram : @YADUVANSHIXD , GitHub : @YADUVANSHIXD
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 import requests
 import json
 from motor.motor_asyncio import AsyncIOMotorClient
 from config import DB_URI, DB_NAME
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 client = AsyncIOMotorClient(DB_URI)
 db = client[DB_NAME]
 col = db["users"]
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 async def get_short_link(user, link):
     api_key = user["shortener_api"]
@@ -30,9 +30,9 @@ async def get_short_link(user, link):
     if data["status"] == "success" or rget.status_code == 200:
         return data["shortenedUrl"]
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 async def get_user(user_id):
 
@@ -52,9 +52,9 @@ async def get_user(user_id):
 
     return user
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 async def update_user_info(user_id, value:dict):
     user_id = int(user_id)
@@ -62,30 +62,30 @@ async def update_user_info(user_id, value:dict):
     newvalues = { "$set": value }
     await col.update_one(myquery, newvalues)
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 async def total_users_count():
     count = await col.count_documents({})
     return count
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 async def get_all_users():
     all_users = col.find({})
     return all_users
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 async def delete_user(user_id):
     await col.delete_one({'user_id': int(user_id)})
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
