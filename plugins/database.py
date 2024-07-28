@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 import logging
 from struct import pack
@@ -12,31 +12,31 @@ from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from config import DB_URI, DB_NAME
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 COLLECTION_NAME = "Telegram_Files"
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 
 client = AsyncIOMotorClient(DB_URI)
 db = client[DB_NAME]
 instance = Instance.from_db(db)
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 @instance.register
 class Media(Document):
@@ -52,9 +52,9 @@ class Media(Document):
         indexes = ('$file_name', )
         collection_name = COLLECTION_NAME
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 
 async def get_file_details(query):
@@ -63,9 +63,9 @@ async def get_file_details(query):
     filedetails = await cursor.to_list(length=1)
     return filedetails
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 
 def encode_file_id(s: bytes) -> str:
@@ -84,17 +84,17 @@ def encode_file_id(s: bytes) -> str:
 
     return base64.urlsafe_b64encode(r).decode().rstrip("=")
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 
 def encode_file_ref(file_ref: bytes) -> str:
     return base64.urlsafe_b64encode(file_ref).decode().rstrip("=")
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
 
 def unpack_new_file_id(new_file_id):
     """Return file_id, file_ref"""
@@ -112,6 +112,6 @@ def unpack_new_file_id(new_file_id):
     return file_id, file_ref
 
 
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - @YADUVANSHIXBOTZ
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
+# Ask Doubt on telegram @YaduvanshiXsupport
