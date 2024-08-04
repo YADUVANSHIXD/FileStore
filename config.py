@@ -96,7 +96,7 @@ class Var(object):
     if HAS_SSL:
         URL = ""
     else:
-        URL = "mad-nickie-yaduvanshixd-596be5d3.koyeb.app/"
+        URL = "https://plain-willetta-pradeepy-6fe5bfd9.koyeb.app/"
 
 
 
