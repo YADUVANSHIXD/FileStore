@@ -15,7 +15,8 @@ class script(object):
 
 sɪᴢᴇ ⚙️: {file_size}
 
-Jᴏɪɴ [U͜͡P͜͡D͜͡A͜͡T͜͡E͜͡ C͜͡H͜͡A͜͡N͜͡N͜͡E͜͡L͜͡](https://t.me/B4UMOVIEHOUSE)</b>""" 
+✯ 𝗨𝗽𝗱𝗮𝘁𝗲 𝗰𝗵𝗮𝗻𝗻𝗲𝗹  : [🍿 𝗨𝗽𝗱𝗮𝘁𝗲 𝗺𝗼𝘃𝗶𝗲 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🍿](https://t.me/B4UMOVIEHOUSE) 
+•─────────★•🥰•★────────•</b>""" 
 
 # Don't Remove Credit Tg - @YADUVANSHIXBOTZ
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@yaduvanshi_xd
