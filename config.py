@@ -37,7 +37,7 @@ ADMINS = int(environ.get("ADMINS", "5294914915"))
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "YaduvanshiBotz")
-DB_URI = environ.get("DB_URI", "mongodb+srv://file:file@cluster0.h0sybu0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = environ.get("DB_URI", "")
 DB_NAME = environ.get("DB_NAME", "cluster0")
 
 # Don't Remove Credit Tg - @YADUVANSHIXBOTZ
@@ -45,7 +45,7 @@ DB_NAME = environ.get("DB_NAME", "cluster0")
 # Ask Doubt on telegram @YaduvanshiXsupport
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "7400429670:AAHU1lQWFDSu7GlX9_Fgq65Zns9kSFf7UTM")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 BOT_USERNAME = environ.get("BOT_USERNAME", "B4U_filesBot") # your bot username without @
 PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
 
